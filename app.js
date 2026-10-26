@@ -50,7 +50,7 @@
   function txt(obj){return esc(obj[lang])}
   function findProduct(id){return PRODUCTS.find(function(p){return p.id===id})}
   function money(n){return "¥"+Number(n).toLocaleString("ja-JP")}
-  function route(){var raw=decodeURIComponent((location.hash||"#/").replace(/^#\/?/,""));return raw.split("/").filter(Boolean)}
+  function route(){var raw=(location.hash||"#/").replace(/^#\/?/,"");try{raw=decodeURIComponent(raw)}catch(e){return ["invalid"]}return raw.split("/").filter(Boolean)}
   function notify(message){var el=document.getElementById("toast");clearTimeout(toastTimer);el.textContent=message;el.classList.add("show");toastTimer=setTimeout(function(){el.classList.remove("show")},3200)}
   function artwork(kind,label){
     var head='<div class="product-art '+kind+'" role="img" aria-label="'+esc(label)+'">';
