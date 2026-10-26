@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#192b31">
+  <meta name="description" content="AizuOrigin | 会津の手仕事と物語を世界へ。越境ECとデジタル来歴証明を組み合わせたコンセプト・ショーケース。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AizuOrigin — Crafted in Aizu, told to the world">
+  <meta property="og:description" content="会津の手仕事と、その来歴を世界へ。Bilingual concept showcase / demo only.">
+  <title>AizuOrigin — 会津の手仕事と物語を世界へ</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">メインコンテンツへ</a>
+  <div class="site-shell">
+    <header class="site-header" id="site-header">
+      <div class="top-note"><span class="top-note__dot"></span><span id="top-note-text">VER. 0.5 / CONCEPT SHOWCASE — DEMO DATA ONLY</span></div>
+      <div class="header-inner">
+        <a class="brand" href="#/" aria-label="AizuOrigin home"><span class="brand-mark" aria-hidden="true">会</span><span class="brand-text">Aizu<span>Origin</span><small>CRAFT · PROVENANCE · WORLD</small></span></a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#/" data-nav="home" id="nav-home">ホーム</a>
+          <a href="#/catalog" data-nav="catalog" id="nav-catalog">作品を探す</a>
+          <a href="#/story" data-nav="story" id="nav-story">私たちの構想</a>
+          <a href="#/passport" data-nav="passport" id="nav-passport">来歴を確かめる</a>
+        </nav>
+        <div class="header-actions">
+          <button class="lang-toggle" type="button" id="lang-toggle" aria-label="Switch language to English">EN <span aria-hidden="true">↗</span></button>
+          <a class="bag-link" href="#/inquiry" id="bag-link" aria-label="Inquiry list"><span id="bag-label">検討リスト</span> <span class="bag-count" id="bag-count">0</span></a>
+        </div>
+      </div>
+    </header>
+    <main id="app" tabindex="-1" aria-live="off">
+      <div class="boot-screen"><span class="eyebrow">AIZU / FUKUSHIMA / JAPAN</span><h1>Handmade heritage, <em>new horizons.</em></h1><p>Loading the AizuOrigin showcase…</p></div>
+    </main>
+    <footer class="site-footer" id="site-footer">
+      <div class="footer-top"><div><span class="footer-kicker">AIZUORIGIN</span><h2 id="footer-title">手仕事には、受け継がれる理由がある。</h2></div><a class="btn btn-light" href="#/catalog" id="footer-cta">作品を見る <span aria-hidden="true">↗</span></a></div>
+      <div class="footer-bottom"><span>© 2026 AizuOrigin · Independent concept demonstration</span><span id="footer-disclaimer">掲載作品・作り手・価格・証明書はすべてデモ用です。実販売・NFT発行は行っていません。</span><a href="https://github.com/Takzin1/AizuOrigin" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+    </footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
